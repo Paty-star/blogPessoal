@@ -43,12 +43,12 @@ public class TemaController {
 		public ResponseEntity<List<Tema>> getByName(@PathVariable String nome){
 			return  ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome));
 			
-			
+		}	
 			
 			@PostMapping
 			public ResponseEntity<Tema> post (@RequestBody Tema tema){
 			return ResponseEntity.status(HttpStatus.CREATED)
-					.body(ResponseEntity<repository.save(tema));	
+					.body(repository.save(tema));	
 			}
 			
 			
