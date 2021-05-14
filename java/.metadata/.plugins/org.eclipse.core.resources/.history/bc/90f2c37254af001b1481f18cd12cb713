@@ -1,0 +1,5 @@
+package org.generation.blogPessoal.Seguranca;
+
+public class UserDetailsServiceImp {
+
+}
